@@ -12,9 +12,10 @@ class RandomChipWidget extends GetWidget<ControllersController> {
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Chip(
-          label: Text(controller.value.value.toString()),
-        ),
+        Obx(() => Chip(
+              label: Text(controller.value.value.toString()),
+              labelStyle: TextStyle(fontSize: 20),
+            )),
         RaisedButton(
           onPressed: () => controller.genRandomValue(),
           child: Text('Gen new random'),
