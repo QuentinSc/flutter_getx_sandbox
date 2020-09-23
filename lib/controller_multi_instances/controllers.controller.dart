@@ -1,19 +1,22 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:meta/meta.dart';
 
 class ControllersController extends GetxController {
-  final _obj = ''.obs;
-  set obj(value) => this._obj.value = value;
-  get obj => this._obj.value;
-
   final RxInt value = 0.obs;
-
+  final ScrollController scrollController = ScrollController();
   @override
   void onInit() {
-    genRandomValue();
-    // TODO: implement onInit
+    print('on init');
+
+    scrollController.addListener(() {
+      print('---------------scroll notification-------------');
+      print(scrollController.offset.toString());
+    });
+
+    //  genRandomValue();
     super.onInit();
   }
 
