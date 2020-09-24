@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import 'controller_multi_instances/controllers.controller.dart';
-import 'controller_multi_instances/controllers.view.dart';
+import 'controller_multi_instances/multi_controllers.controller.dart';
+import 'controller_multi_instances/multi_controllers.view.dart';
 import 'controller_single_instance/unique_controller.controller.dart';
 import 'controller_single_instance/unique_controller.view.dart';
 import 'root/root.controller.dart';

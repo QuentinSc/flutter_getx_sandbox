@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 
-import '../controllers.controller.dart';
+import '../multi_controllers.controller.dart';
 
 class RandomChipWidget extends GetWidget<MultipleControllersController> {
   @override
