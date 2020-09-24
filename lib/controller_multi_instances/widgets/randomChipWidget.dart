@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 import '../controllers.controller.dart';
 
-class RandomChipWidget extends GetWidget<ControllersController> {
+class RandomChipWidget extends GetWidget<MultipleControllersController> {
   @override
   Widget build(BuildContext context) {
     return Row(

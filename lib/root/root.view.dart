@@ -26,6 +26,11 @@ class RootView extends GetView<RootController> {
               child: ListTile(
             title: Text('1. Different instances of same controller'),
             onTap: () => Get.toNamed('controllers'),
+          )),
+          SliverToBoxAdapter(
+              child: ListTile(
+            title: Text('2. Unique instance of controller'),
+            onTap: () => Get.toNamed('controller'),
           ))
         ],
       ),

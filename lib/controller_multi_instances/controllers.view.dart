@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx_sandbox/controller_multi_instances/widgets/randomChipWidget.dart';
-import 'package:flutter_getx_sandbox/controller_multi_instances/widgets/scrollViewWidget.dart';
+
+import 'widgets/scrollViewWidget.dart';
 
 class ControllersView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Differents instances of same controller'),
+          title: Column(
+            children: [
+              Text('Two instances of same controller'),
+              Text('Scroll must print the offset in console',
+                  style: TextStyle(fontSize: 15))
+            ],
+          ),
         ),
         body: Row(
           children: [
