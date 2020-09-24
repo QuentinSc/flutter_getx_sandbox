@@ -25,6 +25,7 @@ class ControllersView extends StatelessWidget {
                     height: 50,
                     padding: EdgeInsets.all(10),
                     child: Text('List One')),
+                // FIRST WIDGET
                 Expanded(child: ScrollViewWidget()),
               ],
             )),
@@ -35,7 +36,8 @@ class ControllersView extends StatelessWidget {
                 Container(
                     height: 50,
                     padding: EdgeInsets.all(10),
-                    child: Text('List One')),
+                    child: Text('List Two')),
+                // SECOND WIDGET
                 Expanded(child: ScrollViewWidget()),
               ],
             ))
